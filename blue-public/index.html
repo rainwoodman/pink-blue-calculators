@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool Blue Calculator ❄️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Decorative floating background sparkles and bubbles -->
+  <div class="sparkle sparkle-1">❄️</div>
+  <div class="sparkle sparkle-2">💎</div>
+  <div class="sparkle sparkle-3">🌊</div>
+  <div class="sparkle sparkle-4">✨</div>
+  <div class="sparkle sparkle-5">🧊</div>
+
+  <main class="calculator-card">
+    <header class="calculator-header">
+      <div class="decor-dots">
+        <span class="dot dot-blue"></span>
+        <span class="dot dot-cyan"></span>
+        <span class="dot dot-sky"></span>
+      </div>
+      <div class="calc-brand">
+        <span class="gem-icon">💎</span>
+        <span class="brand-text">Blue Frost</span>
+        <span class="badge">PRO</span>
+      </div>
+      <button class="sound-toggle" id="soundToggle" title="Toggle sound effects" aria-label="Toggle sound">
+        🔔
+      </button>
+    </header>
+
+    <!-- Display Screen -->
+    <section class="display-container">
+      <div class="history-display" id="historyDisplay" aria-live="polite"></div>
+      <div class="main-display" id="mainDisplay" aria-live="assertive">0</div>
+    </section>
+
+    <!-- Keypad -->
+    <section class="keypad">
+      <!-- Row 1 -->
+      <button class="key func-key" data-action="clear" id="keyClear">AC</button>
+      <button class="key func-key" data-action="delete" id="keyDelete">⌫</button>
+      <button class="key func-key" data-action="percent">%</button>
+      <button class="key op-key" data-action="operator" data-val="÷">÷</button>
+
+      <!-- Row 2 -->
+      <button class="key num-key" data-val="7">7</button>
+      <button class="key num-key" data-val="8">8</button>
+      <button class="key num-key" data-val="9">9</button>
+      <button class="key op-key" data-action="operator" data-val="×">×</button>
+
+      <!-- Row 3 -->
+      <button class="key num-key" data-val="4">4</button>
+      <button class="key num-key" data-val="5">5</button>
+      <button class="key num-key" data-val="6">6</button>
+      <button class="key op-key" data-action="operator" data-val="-">−</button>
+
+      <!-- Row 4 -->
+      <button class="key num-key" data-val="1">1</button>
+      <button class="key num-key" data-val="2">2</button>
+      <button class="key num-key" data-val="3">3</button>
+      <button class="key op-key" data-action="operator" data-val="+">+</button>
+
+      <!-- Row 5 -->
+      <button class="key num-key zero-key" data-val="0">0</button>
+      <button class="key num-key" data-val=".">.</button>
+      <button class="key equals-key" data-action="calculate">=</button>
+    </section>
+
+    <!-- Cute Footer -->
+    <footer class="calculator-footer">
+      <span>Cool as ice 💙 • Keyboard supported</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
