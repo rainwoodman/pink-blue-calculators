@@ -1,0 +1,10 @@
+{
+  "name": "pink-calculator",
+  "version": "1.0.0",
+  "description": "A stylish pink aesthetic calculator powered by Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}
