@@ -34,3 +34,7 @@ node server-blue.js
 Open your browser to:
 - Pink Calculator: `http://localhost:3000`
 - Blue Calculator: `http://localhost:4000`
+
+## Notes
+
+- Dummy update to verify pull request workflow.
